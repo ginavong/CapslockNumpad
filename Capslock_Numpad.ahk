@@ -63,6 +63,13 @@ update_traytip()
 
 ; - Rebinds --------------------------------------------------
 
+; Copy & Paste Functions
+^j::send, ^c
+^k::send, ^v
+^+k::send, ^+v
+^q::send, ^x
+
+
 ;; Common to both numlock states:
 i::Numpad5
 ]::NumpadDiv
@@ -73,7 +80,7 @@ m::Numpad0
 v::NumpadDot
 s:: enter
 
-CapsLock::           ; Backslash/Pipe
+CapsLock::         
     Send {NumLock}
     SoundPlay, *64
     update_traytip()
@@ -108,4 +115,4 @@ CapsLock::           ; Backslash/Pipe
     t::NumpadDown
     n::NumpadPgDn
 
-	w::NumpadIns
+    w::NumpadIns
