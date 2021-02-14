@@ -12,7 +12,7 @@ Press `Alt + CapsLock` to toggle the numpad on and off. Press `CapsLock` to togg
 
 The source code is in `CapsLock_Numpad.ahk` if you want to edit the script, but it will not have the nice icons.
 
-![Key layout diagram](images/keyboard_layout.png)
+![Key layout diagram](images/keyboard-layout.png)
 
 The tray icon for CapslockNumpad changes colour to indicate the state of the numpad (grey for disabled, blue for enabled). I recommend setting this icon to always be visible in the tray (in Windows 10: Right-click the taskbar → Taskbar settings → Notification area → Select with icons appear on the taskbar). The state of NumLock is in the hover tooltip of the tray icon.
 
