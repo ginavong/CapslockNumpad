@@ -1,6 +1,6 @@
-; CapslockNumpad 1.1.0 (2019-12-30)
-; Desi Quintans
-; https://github.com/DesiQuintans/CapslockNumpad
+; DvorakCapslockNumpad 1.1.0 (2021-02-14)
+; Gina Vong, forked from Desi Quintans
+; https://github.com/ginavong/DvorakCapslockNumpad/
 
 ; An Autohotkey script for Windows that lets you emulate a numeric keypad
 ; (numpad) on a keyboard that doesn't have it. Both NumLock modes are usable.
