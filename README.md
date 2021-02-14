@@ -1,4 +1,4 @@
-# CapslockNumpad
+# Dvorak CapslockNumpad
 
 An Autohotkey script for Windows that lets you emulate a numeric keypad (numpad) on a Dvorak-layout keyboard that doesn't have it. Both NumLock modes are usable.
 
