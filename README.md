@@ -20,5 +20,6 @@ The tray icon for CapslockNumpad changes colour to indicate the state of the num
 
 ## Acknowledgements
 
+- Forked from [DesiQuintans](https://github.com/DesiQuintans/CapslockNumpad)
 - Keyboard layout diagram from <http://www.keyboard-layout-editor.com>
 - Base code from [/u/GroggyOtter](https://www.reddit.com/r/AutoHotkey/comments/abyg9b/help_script_for_emulated_numpad_function/)
