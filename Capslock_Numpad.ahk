@@ -1,18 +1,20 @@
-﻿; CapslockNumpad 1.1.0 (2019-12-30)
+; CapslockNumpad 1.1.0 (2019-12-30)
 ; Desi Quintans
 ; https://github.com/DesiQuintans/CapslockNumpad
 
 ; An Autohotkey script for Windows that lets you emulate a numeric keypad
 ; (numpad) on a keyboard that doesn't have it. Both NumLock modes are usable.
 
-; Press Ctrl + CapsLock to toggle the numpad on and off.
+; Press Alt + CapsLock to toggle the numpad on and off.
 ; Press \ (above Enter) to toggle NumLock.
 
+; Dvorak keyboard
 ; 789  ->  789
-; uio  ->  456
-; jkl  ->  123
-; 0./  ->  0./
-; *-=  ->  *-+
+; gcr  ->  456
+; htn  ->  123
+; mwv  ->  0 w .
+; 0[]  ->  -*/
+; ls -> + enter
 
 
 
@@ -36,7 +38,7 @@ numlock_on()
 
 update_traytip()
 {
-    tray_text := "CapsLock Numpad`nToggle with Ctrl + CapsLock"
+    tray_text := "CapsLock Numpad`nToggle with Alt + CapsLock"
 
     if (numlock_on() == true) {
         numlock_state := "NumLock is ON"
@@ -49,9 +51,9 @@ update_traytip()
 
 update_traytip()
 
-; - Ctrl + CapsLock toggling ---------------------------------
+; - Alt + CapsLock toggling ---------------------------------
 
-^CapsLock::
+!CapsLock::
     Suspend, Toggle
     SoundPlay, *48
     update_traytip()
@@ -63,15 +65,15 @@ update_traytip()
 
 ;; Common to both numlock states:
 i::Numpad5
-/::NumpadDiv
-=::NumpadAdd
--::NumpadSub
-+8::NumpadMult
+]::NumpadDiv
+l::NumpadAdd
+0::NumpadSub
+[::NumpadMult
 m::Numpad0
-0::Numpad0
-SC034::NumpadDot  ; Period/Greater-Than key
+v::NumpadDot
+s:: enter
 
-SC02B::           ; Backslash/Pipe
+CapsLock::           ; Backslash/Pipe
     Send {NumLock}
     SoundPlay, *64
     update_traytip()
@@ -84,22 +86,26 @@ SC02B::           ; Backslash/Pipe
     8::Numpad8
     9::Numpad9
 
-    u::Numpad4
-    o::Numpad6
+    g::Numpad4
+	c::Numpad5
+    r::Numpad6
 
-    j::Numpad1
-    k::Numpad2
-    l::Numpad3
+    h::Numpad1
+    t::Numpad2
+    n::Numpad3
 
+	w::=
 
 #If (numlock_on() == false)
     7::NumpadHome
     8::NumpadUp
     9::NumpadPgUp
 
-    u::NumpadLeft
-    o::NumpadRight
+    g::NumpadLeft
+    r::NumpadRight
 
-    j::NumpadEnd
-    k::NumpadDown
-    l::NumpadPgDn
+    h::NumpadEnd
+    t::NumpadDown
+    n::NumpadPgDn
+
+	w::NumpadIns
