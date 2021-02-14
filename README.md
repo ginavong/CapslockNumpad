@@ -1,6 +1,6 @@
 # CapslockNumpad
 
-An Autohotkey script for Windows that lets you emulate a numeric keypad (numpad) on a keyboard that doesn't have it. Both NumLock modes are usable.
+An Autohotkey script for Windows that lets you emulate a numeric keypad (numpad) on a Dvorak-layout keyboard that doesn't have it. Both NumLock modes are usable.
 
 
 
@@ -8,7 +8,7 @@ An Autohotkey script for Windows that lets you emulate a numeric keypad (numpad)
 
 Extract `CapslockNumpad.exe` to anywhere on your computer and run it. The executable does not write anything to your computer.
 
-Press `Ctrl + CapsLock` to toggle the numpad on and off. Press `\` (above the `Enter` key) to toggle NumLock.
+Press `Alt + CapsLock` to toggle the numpad on and off. Press `CapsLock` to toggle NumLock.
 
 The source code is in `CapsLock_Numpad.ahk` if you want to edit the script, but it will not have the nice icons.
 
